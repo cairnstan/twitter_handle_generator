@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="handleApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+
+    <title>Twitter Handles!</title>
+  </head>
+  <body ng-controller="TwitterController">
+  <h2> Twitter Handle Generator </h2>
+    <div>
+      <button ng-click="shuffleHandles()">TWITTER ME</button>
+      <h3>Your twitter handles!!!</h3>
+      <p ng-repeat ="handle in handles">
+        @{{handle.name}} | <a ng-href="{{handle.url}}">Twitter profile</a>
+      </p>
+    <div>
+
+    </div>
+  </body>
+</html>
